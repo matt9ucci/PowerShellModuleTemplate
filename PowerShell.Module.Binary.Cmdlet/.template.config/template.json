@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+
+	"name": "PowerShell Cmdlet",
+	"description": "Creates a cmdlet cs file for a PowerShell binary module",
+
+	"shortName": "pscmdlet",
+	"tags": {
+		"language": "[C#],PowerShell",
+		"type": "item"
+	},
+	"classifications": [
+		"PowerShell",
+		"Module",
+		"Cmdlet"
+	],
+
+	"sourceName": "HelloWorld",
+	"symbols": {
+		"ModuleName": {
+			"type": "parameter",
+			"dataType": "string",
+			"isRequired": true,
+			"replaces": "ModuleName"
+		}
+	},
+
+	"identity": "PowerShell.Module.Binary.Cmdlet",
+	"author": "Masatoshi Higuchi"
+}
