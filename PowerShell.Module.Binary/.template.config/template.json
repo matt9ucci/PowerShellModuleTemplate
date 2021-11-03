@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+
+	"name": "PowerShell Binary Module",
+	"description": "A project for creating a PowerShell binary module",
+
+	"shortName": "psmobinary",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"classifications": [
+		"PowerShell",
+		"Module"
+	],
+
+	"preferNameDirectory": true,
+
+	"sourceName": "HelloPowerShellBinaryModule",
+	"symbols": {
+		"module-manifest-GUID": {
+			"type": "generated",
+			"generator": "guid",
+			"parameters": {
+				"format": "D"
+			},
+			"replaces": "12345678-9abc-def0-1234-56789abcdef0"
+		},
+		"now-year": {
+			"type": "generated",
+			"generator": "now",
+			"parameters": {
+				"format": "yyyy"
+			},
+			"replaces": "now-yyyy"
+		}
+	},
+
+	"identity": "PowerShell.Module.Binary",
+	"author": "Masatoshi Higuchi"
+}

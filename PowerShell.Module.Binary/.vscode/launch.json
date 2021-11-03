@@ -1,0 +1,25 @@
+{
+	"configurations": [
+		{
+			"name": "Module: Debug",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build: Debug",
+			"program": "pwsh",
+			"args": [
+				"-NoExit",
+				"-NoProfile",
+				"-Command",
+				"Import-Module ${workspaceFolder}/bin/Debug/net6.0/HelloPowerShellBinaryModule.psd1",
+			],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "openOnFirstSessionStart",
+			"stopAtEntry": false,
+		},
+		{
+			"name": "Script: Debug",
+			"type": "PowerShell",
+			"request": "launch",
+		},
+	],
+}

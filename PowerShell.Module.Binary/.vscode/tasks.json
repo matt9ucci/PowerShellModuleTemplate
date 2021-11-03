@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build: Debug",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "dotnet",
+			"args": [
+				"build",
+				"--configuration",
+				"Debug",
+			],
+		},
+		{
+			"label": "build: Release",
+			"type": "shell",
+			"group": "build",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"--configuration",
+				"Release",
+			],
+		},
+		{
+			"label": "clean: Debug",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"clean",
+				"--configuration",
+				"Debug",
+			],
+		},
+		{
+			"label": "clean: Release",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"clean",
+				"--configuration",
+				"Release",
+			],
+		}
+	],
+}
