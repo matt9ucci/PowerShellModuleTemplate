@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+
+	"name": "PowerShell Provider",
+	"description": "Creates a Provider cs file for a PowerShell binary module",
+
+	"shortName": "psprovider",
+	"tags": {
+		"language": "C#",
+		"type": "item"
+	},
+	"classifications": [
+		"PowerShell",
+		"Module",
+		"Provider"
+	],
+
+	"sourceName": "HelloWorld",
+
+	"identity": "PowerShell.Module.Binary.Provider",
+	"author": "Masatoshi Higuchi"
+}
