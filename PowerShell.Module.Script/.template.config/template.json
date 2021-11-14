@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+
+	"name": "PowerShell Script Module",
+	"description": "A project for creating a PowerShell script module",
+
+	"shortName": "psmoscript",
+	"tags": {
+		"language": "PowerShell",
+		"type": "project"
+	},
+	"classifications": [
+		"PowerShell",
+		"Module"
+	],
+
+	"preferNameDirectory": true,
+
+	"sourceName": "HelloPowerShellScriptModule",
+	"symbols": {
+		"module-manifest-GUID": {
+			"type": "generated",
+			"generator": "guid",
+			"parameters": {
+				"format": "D"
+			},
+			"replaces": "12345678-9abc-def0-1234-56789abcdef0"
+		},
+		"now-year": {
+			"type": "generated",
+			"generator": "now",
+			"parameters": {
+				"format": "yyyy"
+			},
+			"replaces": "now-yyyy"
+		}
+	},
+
+	"identity": "PowerShell.Module.Script",
+	"author": "Masatoshi Higuchi"
+}
