@@ -1,0 +1,24 @@
+{
+	"configurations": [
+		{
+			"name": "HelloPowerShellModule",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build",
+			"program": "pwsh",
+			"args": [
+				"-NoExit",
+				"-NoProfile",
+				"-Command",
+				"Import-Module ${workspaceFolder}/HelloPowerShellModule/bin/Debug/net6.0/HelloPowerShellModule.psd1",
+			],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "openOnFirstSessionStart",
+			"justMyCode": false,
+			"stopAtEntry": false,
+			"symbolOptions": {
+				"searchMicrosoftSymbolServer": true,
+			},
+		},
+	],
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+
+	"name": "PowerShell Module",
+	"description": "A project for creating a PowerShell module",
+
+	"shortName": "psmo",
+	"tags": {
+		"language": "[PowerShell],C#",
+		"type": "project"
+	},
+	"classifications": [
+		"PowerShell",
+		"Module"
+	],
+
+	"preferNameDirectory": true,
+
+	"sourceName": "HelloPowerShellModule",
+	"symbols": {
+		"module-manifest-GUID": {
+			"type": "generated",
+			"generator": "guid",
+			"parameters": {
+				"format": "D"
+			},
+			"replaces": "12345678-9abc-def0-1234-56789abcdef0"
+		},
+		"now-year": {
+			"type": "generated",
+			"generator": "now",
+			"parameters": {
+				"format": "yyyy"
+			},
+			"replaces": "now-yyyy"
+		}
+	},
+
+	"identity": "PowerShell.Module",
+	"author": "Masatoshi Higuchi"
+}

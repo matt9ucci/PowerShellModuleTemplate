@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true,
+			},
+			"command": "dotnet",
+			"args": [
+				"build",
+			],
+		},
+		{
+			"label": "test",
+			"type": "shell",
+			"group": {
+				"kind": "test",
+				"isDefault": true,
+			},
+			"command": "dotnet",
+			"args": [
+				"test",
+			],
+		},
+		{
+			"label": "Pester",
+			"type": "shell",
+			"group": "test",
+			"command": "pwsh",
+			"args": [
+				"-c",
+				"Invoke-Pester",
+				"${workspaceFolder}/*.Test/Pester/",
+			],
+			"dependsOn": [
+				"build",
+			],
+		},
+		{
+			"label": "clean",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"clean",
+			],
+		},
+	],
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>$(MSBuildProjectName).Binary</AssemblyName>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="PowerShellStandard.Library" Version="7.0.0-preview.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="src\$(MSBuildProjectName).psd1" TargetPath="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="src\$(MSBuildProjectName).psm1" TargetPath="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="src\**\*.ps1" TargetPath="%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
+</Project>
