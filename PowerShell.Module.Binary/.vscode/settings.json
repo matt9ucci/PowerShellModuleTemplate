@@ -2,4 +2,10 @@
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"omnisharp.enableRoslynAnalyzers": true,
+	"powershell.codeFormatting.newLineAfterCloseBrace": false,
+	"powershell.codeFormatting.useConstantStrings": true,
+	"powershell.codeFormatting.useCorrectCasing": true,
+	"powershell.codeFormatting.whitespaceBetweenParameters": true,
 }
